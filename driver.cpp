@@ -24,11 +24,8 @@ int main()
         cout << "\nWhat Would you like to do?";
         cout << "\n1.  Merge Sort";
         cout << "\n2.  Selection Sort";
-        cout << "\n3.  ";
-        cout << "\n4.  ";
-        cout << "\n5.  ";
-        cout << "\n6.  ";
-        cout << "\nCHOOSE 1-6:  ";
+        cout << "\n3.  End Program";
+        cout << "\nCHOOSE 1-2:  ";
 
         cin >> choice;
     
@@ -40,28 +37,12 @@ int main()
                 countyList.selectionSort();
                 break;
             case 3:
-
-                break;
-            case 4:
-                
-                break;
-            case 5:
-                
-                break;
-            case 6:
-
+                cout << "Closing program...";
                 break;
             default:
-                
                 break;
         }
-    }while(choice != 6);
-
-
-
-	countyList.selectionSort();
-	
-	countyList.print();
+    }while(choice != 3);
 
 	cin.get();
 	return 0;
